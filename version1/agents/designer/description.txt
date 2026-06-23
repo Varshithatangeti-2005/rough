@@ -1,0 +1,1 @@
+The Designer Agent takes detailed website requirements from the Requirements Writer Agent and converts them into a complete UI/UX design specification. It defines page layouts, component placement, visual styling, spacing, colors, typography, and interaction behavior so a Code Writer Agent can generate a single-file HTML/CSS/JS implementation accurately.

@@ -1,0 +1,1 @@
+The Code Writer Agent takes the structured requirements from the Requirements Writer Agent and the UI design specifications from the Designer Agent, then generates a complete single-file implementation containing HTML, CSS, and JavaScript. It ensures the final code is functional, responsive, clean, and ready to be written to disk using the file_writer tool.
