@@ -1,12 +1,11 @@
-import os
 from google.adk.agents import LlmAgent
-import sys
-sys.os.path.abspath(os.path.join(os.path.dirname(__file__),"..",".."))
+from tools.file_writer_tool import write_to_file
 from utils.file_loader import load_instructions_file
-designer_agent=LlmAgent(
-    name="designer_agent",
+
+code_writer_agent = LlmAgent(
+    name="code_agent",
     model="gemini-2.5-flash",
-    instruction=load_instructions_file("agents/designer/instructions.txt"),
-    description=load_instructions_file("agents/designer/description.txt"),
-    output_key="designer_output"
+    instruction=load_instructions_file("agents/code_writer/instructions.txt"),
+    description=load_instructions_file("agents/code_writer/description.txt"),
+    tools=[write_to_file],
 )
